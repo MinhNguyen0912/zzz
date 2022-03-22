@@ -1,0 +1,514 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#nav{
+    display: inline-block;
+}
+#header{
+    background-color: black;
+    font-family: Lato, sans-serif;
+    z-index: 1;
+}
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+#nav li a{
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46.5px;
+    text-decoration: none;
+    width: 100%;
+}
+#nav > li:hover > a{
+    color: black;
+    background-color: #ccc;
+    display: inline-block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav {
+    display: none; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+#nav .subnav li a{
+    color: black;
+    padding: 0 16px;
+    display: inline-block;
+    line-height: 38.5px;
+}
+#nav .subnav li:hover{
+    background-color: #ccc;
+}
+#nav .subnav li{
+    height: 38.5px;
+    min-width: 160px;
+}
+
+#nav .ti-angle-down{
+    font-size: 60%;
+}
+#header .search{
+    float: right;
+}
+#header .ti-search{
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 23px;
+}
+#header .search:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .menu{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#header .ti-menu{
+    color: #fff;
+    line-height: 46.5px;
+    padding: 15px 23px;
+}
+#header .menu:hover i{
+    color: black;
+}
+#header .menu:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+#header{
+    height: 46.5px;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+}
+#slider{
+    margin-top: 46.5px;
+    background: url('/w3_school/assets/img/slider/chicago.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+    text-align: center;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 53px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#slider .text-content .text-header{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+}
+#slider .text-content .text-p{
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+.khung{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin: auto;
+}
+#content .khung-header{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 4px;
+}
+#content .khung-nd{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+    opacity: 0.6;
+    font-style: italic;
+}
+#content .nd1{
+    margin: 15px 0;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22.5px;
+}
+#content .tv{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}    
+#content .anhthanhvien{
+    padding: 32px 0;
+    overflow: hidden;
+}
+#content .ten-tv{
+    margin: 15px 0;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+
+}
+#content .tv-anh{
+    width: 60%;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+#content .tour{
+    background-color: black;
+}
+.tour .khung-header{
+    color: #fff;
+}
+.tour .khung-nd{
+    color: #fff;
+}
+.tour .lichchieu{
+    background-color: #fff;
+}
+.tour .lichchieu li{
+    font-size: 15px;
+    padding: 8px 16px;
+    line-height: 22.5px;
+    border: 1px solid rgb(221, 221, 221);
+    font-family: Lato, sans-serif;
+    color: #757575;
+    list-style: none;
+}
+.tour .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    padding: 3px 8px;
+    margin-left: 16px;
+    line-height: 22.5px;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+.tour .con-lai{
+    width: 24.7px;
+    height: 22.5px;
+    margin-right: 16px;
+    background-color: black;
+    float: right;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 22.5px;
+}
+
+.tour .review1{
+    float: left;
+    width: 33.33333%;
+}
+.tour .anh-review{
+    width: 100%;
+    display: block;
+}
+.clear{
+    clear: both;
+}
+.tour .review{
+    padding: 32px 8px 60px 8px;
+    margin: 0 -16px;
+    
+}
+.tour .review1{
+    padding: 0 8px;
+}
+.tour .anh-review:hover{
+    opacity: 0.6;
+}
+.tour .all-review{
+    background-color: #fff;
+    padding: 0 16px;
+}
+.tour .dd-review{
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+.tour .date-review{
+    margin: 15px 0;
+    opacity: 0.6;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+}
+.tour .tt-review{
+    line-height: 22.5px;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.buy-review{
+    color: #fff;
+    background-color: black;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    line-height: 22.5px;
+    border: none;
+}
+.buy-review:hover{
+    color: black;
+    background-color: #cccccc;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    justify-content: center; 
+    align-items: center;
+    display: none;
+}
+.modal.open{
+    display: flex;
+}
+.tickets-modal{  
+    width: 90%;
+    animation: modalChayTuTu ease 0.4s;
+}
+.header-modal{
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 45px;
+    text-align: center;
+}
+.briefcase{
+    margin: 10px 0;
+}
+.header-modal{
+    padding: 32px 16px;
+    background-color: #009688;
+}
+.close{
+    float: right;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 36px;
+}
+.close:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.body-modal{
+    background-color: #fff;
+    padding: 0 16px;
+}
+.modal-label{
+    display: block;
+    padding: 15px 0;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+}
+.modal-input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    line-height: 22.5px;
+    font-size: 15px;
+}
+#buy-tickets{
+    margin: 16px 0;
+    padding: 16px;
+    width: 100%;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+#buy-tickets:hover{
+    color: black;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.hoi-dap{
+    background-color: #fff;
+    text-align: right;
+    padding: 15px 0 31px;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+.body-modal a{
+    color: #2196F3;
+}
+@keyframes modalChayTuTu{
+    from{
+        transform: translateY(-200px);
+        opacity: 0.3;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.contact-content{
+    padding: 32px 0;
+}
+.contact-content a{
+    opacity: 0.8;
+    text-decoration: none;
+    color: red;
+}
+.contact-content a:hover{
+    opacity: 1;
+}
+.col-left{  
+    font-size: 18px;
+    font-family: Lato, sans-serif;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+.col-half i{
+    width: 30px;
+    display: inline-block;
+}
+.form-control{
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid rgb(204, 204, 204) ;
+    width: 100%;
+}
+.form-control-down{
+    margin-top: 8px;
+}
+.submit-button{
+    float: right;
+    margin-right: 8px;
+    margin-top: 16px;
+}
+.map{
+    width: 100%;
+    filter: grayscale(0.5);
+    display: block;
+}
+#footer{
+    text-align: center;
+    opacity: 0.6;
+}
+.logo{
+    font-size: 24px;
+    line-height: 36px;
+}
+.under-logo{
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+.under-logo a{
+    color: black;
+}
+.logo i:hover{
+    opacity: 0.5;
+}
+@media screen and (min-width: 740px) {
+    #header .menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    #nav li{
+        display: block;
+    }
+    #header .search{
+        display: none;
+    }
+    #nav{
+        display: block;
+    }
+    #nav>li:first-child{
+        display: inline-block;
+    }
+    #header{
+        overflow: hidden; 
+       
+    }   
+    #nav .subnav{
+        position: initial;
+        background-color: #757575;
+    }
+    #nav .subnav li a{
+        padding: 7px 35px;
+    }
+    #nav .subnav li{
+        height: auto;
+    }
+    #content .tv{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .tour .review1{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .col-half{
+        width: 100%;
+    }
+    .col{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .submit-button{
+        width: 100%;
+        margin-right: 0;
+    }
+    .zz{
+        padding-top: 8px;
+    }
+}
+
+
+
+
+
+
+
+

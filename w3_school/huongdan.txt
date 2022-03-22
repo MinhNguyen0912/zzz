@@ -1,0 +1,14 @@
+1. header
+2. slider
+3. content
+	3.1 The band
+	3.2 Tour
+	3.3 Contact
+	3.4 Image
+4. footer
+
+Css:
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Style
